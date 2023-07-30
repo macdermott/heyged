@@ -4,8 +4,8 @@ layout: layouts/post.njk
 title: My Todoist setup
 description: How I use Todoist to manage my life
 date: 2023-07-30
-image: /img/todoist-title.png
-imageCredit: Photo by charlesdeluvio on Unsplash
+image: /img/todoist-title.jpg
+imageCredit: Photo by Glenn Carstens-Peters on Unsplash
 ---
 
 It's taken me a while to realise that todo lists are useful. I knew they were useful for specific occassions (such as packing for a holiday) but I didn't realise how useful they could be for everyday life. I had assumed that everyone else just remembers stuff but it turns out that a lot of people keep lists. When I first started looking at keeping lists I did my usual thing of throwing my whole attention at it and got excited about designing a <a href="https://en.wikipedia.org/wiki/Bullet_journal">bullet journal</a>, but I knew from experience a physical, paper solution will ultimately not be there when I need it
