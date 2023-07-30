@@ -3,13 +3,19 @@ title: Home
 layout: layouts/base.njk
 ---
 
-<div class="space-y-8">
-
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it yours ✌️</p>
-  </div>
-
-
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter" class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on github</a>
+<div class="w-full align-middle content-center px-10">
+    <section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right">
+        <div class="container mx-auto">
+            <div
+                class="flex flex-col w-full justify-center px-6 tracking-wide align-middle items-center md:pt-20 md:pb:15">
+                <div class="font-display font-black text-4xl my-4 tracking-wider">Hey, I'm Ged. I make things.</div>
+                <div class="font-display font-black text-4xl my-4 tracking-wider">This is a site for me to store my
+                    thoughts.</div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-8">
+        {% set postslist = collections.posts %}
+        {% include "components/postslist.njk" %}
+    </section>
 </div>

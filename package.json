@@ -1,5 +1,5 @@
 {
-  "name": "eleventy",
+  "name": "heyged",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
     "mini-css-extract-plugin": "^0.11.3",
@@ -25,9 +25,8 @@
     "postcss": "^8.4.14",
     "postcss-loader": "^4.3.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.3.3",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
-  },
-  "dependencies": {}
+  }
 }

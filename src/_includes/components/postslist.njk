@@ -1,13 +1,23 @@
-<ul>
-  {% for post in postslist %}
-    <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      -
-      <span>{{ post.data.description }}</span>
-    </li>
-  {% endfor %}
-</ul>
+<div class="container  py-8 mx-auto items-center">
+  <h3 class="font-display font-black p-4 text-2xl text-black">Posts</h3>
+  <div class="flex flex-wrap">
+    {% for post in postslist %}
+    <div class="md:[&:nth-child(3n)]:w-full md:w-1/2 p-2">
+      <a href="{{ post.url }}">
+        <div class="flex relative group">
+          <img src="{{ post.data.image }}" alt="{{ post.data.description }}"
+            class="inset-0 h-full w-full object-cover object-center rounded-lg opacity-75 hover:opacity-100 group" />
+          <h1
+            class="md:hidden group-hover:block absolute text-2xl text-white font-black tracking-wider top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group">
+            {{ post.data.title }}</h1>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    {% if postslist.length === 0 %}
+    <div class="w-full text-center">
+      <p class="font-display font-bold text-large">No posts yet!</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

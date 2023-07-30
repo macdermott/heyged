@@ -1,15 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>{{ title }}</title>
-     <link rel="stylesheet" type="text/css" href="/assets/main.css" />
-  </head>
-  <body>
-    {% include "../components/navigation.njk" %}
-    <main class="p-12">
-      <h1 class="text-3xl mb-8">{{title}}</h1>
-      {{ content | safe }}
-    </main>
-    <script src="/assets/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }} | Hey Ged</title>
+  <meta name="title" content="{{ title }} | Hey Ged">
+  <meta name="description" content="Hey, I'm Ged. I make things. This is a place for me to store my thoughts.">
+  <meta name="keywords"
+    content="">
+  <link rel="canonical" href="https://heyged.dev/">
+  <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="Hey Ged" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+  <link href="https://fonts.googleapis.com/css2?&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {% include "../components/navigation.njk" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  <script src="/assets/main.js"></script>
+</body>
+
 </html>

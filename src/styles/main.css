@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+@layer base {
+  /* base styles */
+  a {
+    @apply underline;
+  }
+  h1 {
+    @apply text-4xl font-display font-bold text-black md:text-5xl;
+  }
+  h2 {
+    @apply text-3xl font-display font-bold text-black md:text-4xl;
+  }
+  h3 {
+    @apply text-xl font-display font-bold text-black md:text-2xl;
+  }
+  h4 {
+    @apply text-xs font-display font-bold text-black md:text-base;
+  }
+
+  /* Rich text */
+  p {
+    @apply text-black py-2;
+  }
+  ul {
+    @apply list-disc list-inside;
+  }
+  blockquote {
+    @apply p-4 my-4 border-l-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800;
+  }
+}

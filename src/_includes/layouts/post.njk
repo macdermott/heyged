@@ -1,6 +1,11 @@
 ---
 layout: layouts/base.njk
 ---
-
-<time>{{ date | readableDate }}</time>
-<article>{{ content | safe }}</article>
+<div class="container md:px-10 px-4 py-4 mx-auto items-center">
+    <img src="{{ image }}" alt="{{ description }}"
+        class="w-full rounded-lg object-cover object-center md:h-96 h-64">
+    <div class="pt-0 text-sm text-right">{{ imageCredit }}</div>
+    <h1 class="my-3 md:my-4">{{ title }}</h1>
+    <time class="py-2">{{ date | postDate }}</time>
+    <article class="py-2">{{ content | safe }}</article>
+</div>
