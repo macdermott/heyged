@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function (eleventyConfig) {
   /*
@@ -46,6 +47,23 @@ module.exports = function (eleventyConfig) {
         <div class="py-4 font-bold text-center w-full">${caption}</div>
       </div>
     </div>`;
+  });
+
+  /*
+    SEO
+  */
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: "Hey Ged",
+    description: "Hey, I'm Ged. I make things. This is a place for me to store my thoughts.",
+    url: "https://heyged.dev",
+    author: "Ged MacDermott",
+    image: "/img/ged.png",
+    options: {
+      titleDivider: "|",
+      imageWithBaseUrl: true,
+      twitterCardType: "summary_large_image",
+      showPageNumbers: false
+    }  
   });
 
   return {

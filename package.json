@@ -28,5 +28,8 @@
     "tailwindcss": "^3.3.3",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2"
   }
 }
