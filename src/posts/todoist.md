@@ -2,7 +2,8 @@
 draft: true
 layout: layouts/post.njk
 title: My Todoist setup
-description: How I use Todoist to manage my life
+excerpt: How I use Todoist to manage my life
+author: Ged MacDermott
 date: 2023-07-30
 image: /img/todoist-title.jpg
 imageCredit: Photo by Glenn Carstens-Peters on Unsplash
